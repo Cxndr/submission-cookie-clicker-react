@@ -1,7 +1,7 @@
 import './Sidebar.css'
 
 
-export default function Sidebar(enabled) {
+export default function Sidebar({enabled}) {
 
     let divClassName = "sidebar"
     if (enabled) {

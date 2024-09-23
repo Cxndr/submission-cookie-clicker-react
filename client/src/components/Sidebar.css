@@ -81,7 +81,7 @@
 .sidebar-overflow-fix {
     overflow: auto;
 }
-.sidebar-enabled > #sidebar-content {
+.sidebar-enabled > .sidebar-content {
     transition: opacity 1.5s;
     transition-delay: 0.8s;
     opacity: 1;
