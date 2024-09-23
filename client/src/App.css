@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-optical-sizing: auto;
+  color-scheme: light dark;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(206, 174, 140);
+  background-image: 
+      linear-gradient(
+          rgba(206, 174, 140, 0.9),
+          rgba(74, 52, 19, 0.5)
+      ),
+      /* url(https://img.freepik.com/premium-vector/vector-seamless-pattern-with-cookies-colorful_566075-619.jpg?w=826), */
+      url(https://www.shutterstock.com/image-vector/chocolate-chip-cookies-doodle-seamless-600nw-2279158739.jpg);
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 100svh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5fr 10fr 1fr;
+  align-items: center;
+  justify-items: center;
+  transition: margin-left 1s;
+  position: relative;
+  overflow: hidden;
+}
+main.sidebar-active {
+  margin-left: 25rem;
+}
+
+button {
+  background: #96835b;
+  background-image: linear-gradient(to bottom, #b89447,#d4a744);
+  border-radius: 12px;
+  font-family: Arial;
+  color: #eceade;
+  font-size: 20px;
+  padding: 0.5rem;
+  transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
+  border: none;
+  filter: drop-shadow(0 0 2px #1a1a1a49)
+}
+
+button:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 4px #1a1a1a86);
+  cursor: pointer;
+}
+
+.cookiefill-icon:before {
+  background-image: url("../img/cookie.png");
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:2px #422e16d3;
+}
+.cookiefill-text {
+  background-image: url("../img/cookie-fill.png");
+  background-size: 4rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke:2px #422e16d3; */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

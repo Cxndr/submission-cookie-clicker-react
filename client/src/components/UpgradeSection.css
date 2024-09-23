@@ -1,0 +1,42 @@
+.shop {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+    /* background-color: pink; */
+    gap: 1rem;
+    row-gap: 1rem;
+    overflow-y: auto;
+    height: 100%;
+    width: auto;
+    user-select: none;
+}
+.upgrade-container {
+    width: 18rem;
+    background-color: #3e2f289f;
+    padding: 1rem;
+    color: #f4debf;
+    border-radius: 14px;
+}
+.upgrade-container h3 {
+    margin: 0;
+    padding: 0;
+}
+.upgrade-container img {
+    height: 6rem;
+    float: right;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+.upgrade-container button {
+    font-size: 1.2rem;
+    width: 5rem;
+}
+.disabled-upgrade {
+    opacity: 0.2;
+}
+.disabled-upgrade button {
+    visibility: hidden;
+}
