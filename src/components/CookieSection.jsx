@@ -80,7 +80,7 @@ export default function CookieSection({cookieCPS,cookieCount,setCookieCount,setS
         <section className="cookie-section" ref={cookieSection}>
             
             <img 
-                src="./img/cookie.png"
+                src="/img/cookie.png"
                 id="cookie"
                 className={cookieClicked ? "cookie cookie-click-anim" : "cookie"}
                 onMouseDown={cookieClick}
