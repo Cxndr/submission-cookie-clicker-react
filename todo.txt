@@ -1,0 +1,6 @@
+- buy themes for cookie/background in shop
+- sounds (SUBTLE!)
+
+
+CROSS PLATFORM OPEN LINK ON NPM RUN DEV
+"URL=http://localhost:5173 && (open $URL || cmd.exe /c start $URL) && vite
