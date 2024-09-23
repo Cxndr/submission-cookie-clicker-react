@@ -38,7 +38,7 @@ export default function UpgradeShop({cookieCPS,setCookieCPS, cookieCount, setCoo
                         name={upgrade.name}
                         power={upgrade.increase}
                         cost={upgrade.cost}
-                        img={`./img/icons/${upgrade.id}.png`}
+                        img={`/img/icons/${upgrade.id}.png`}
                     />
                 )
             })}
